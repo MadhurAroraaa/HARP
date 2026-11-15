@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "name": "HARP Demonstration Pipeline",
+    "topologyType": "simulated",
+    "directed": true,
+    "description": "Illustrative network for anomaly isolation and bypass routing. Not a real engineering pipeline."
+  },
+  "source": 0,
+  "target": 5,
+  "nodes": [
+    { "id": 0, "label": "Source Pump Station" },
+    { "id": 1, "label": "Junction A" },
+    { "id": 2, "label": "Junction B - Pressure Sensor" },
+    { "id": 3, "label": "Junction C" },
+    { "id": 4, "label": "Junction D - Temperature Sensor" },
+    { "id": 5, "label": "Delivery Point" },
+    { "id": 6, "label": "Junction E - Flow Sensor" },
+    { "id": 7, "label": "Junction F - Vibration Sensor" },
+    { "id": 8, "label": "Bypass Node G" },
+    { "id": 9, "label": "Bypass Node H" }
+  ],
+  "edges": [
+    { "id": "e0", "from": 0, "to": 1, "capacity": 120, "diameter": 6, "length": 150 },
+    { "id": "e1", "from": 1, "to": 2, "capacity": 100, "diameter": 5, "length": 200 },
+    { "id": "e2", "from": 2, "to": 4, "capacity": 90, "diameter": 5, "length": 180 },
+    { "id": "e3", "from": 3, "to": 5, "capacity": 85, "diameter": 4, "length": 220 },
+    { "id": "e4", "from": 0, "to": 6, "capacity": 110, "diameter": 6, "length": 130 },
+    { "id": "e5", "from": 6, "to": 7, "capacity": 95, "diameter": 5, "length": 170 },
+    { "id": "e6", "from": 7, "to": 5, "capacity": 80, "diameter": 4, "length": 190 },
+    { "id": "e7", "from": 1, "to": 3, "capacity": 75, "diameter": 4, "length": 260 },
+    { "id": "e8", "from": 1, "to": 6, "capacity": 70, "diameter": 4, "length": 160 },
+    { "id": "e9", "from": 6, "to": 9, "capacity": 75, "diameter": 4, "length": 195 },
+    { "id": "e10", "from": 9, "to": 5, "capacity": 65, "diameter": 3, "length": 175 },
+    { "id": "e11", "from": 0, "to": 8, "capacity": 65, "diameter": 4, "length": 210 },
+    { "id": "e12", "from": 8, "to": 3, "capacity": 60, "diameter": 3, "length": 140 },
+    { "id": "e13", "from": 2, "to": 8, "capacity": 60, "diameter": 3, "length": 155 },
+    { "id": "e14", "from": 4, "to": 3, "capacity": 90, "diameter": 5, "length": 180 }
+  ]
+}
